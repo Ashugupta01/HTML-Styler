@@ -6,23 +6,25 @@
 	<link href="https://fonts.googleapis.com/css?family=Chela+One|Asap" rel="stylesheet">
 	<script type="text/javascript" src="script.js"></script>
 </head>
-<body>
+<body id="main">
 	<div id="getDetails">
 		<h1>Welcome to HTML Styler</h1>
 		<h3>Enter the heading and content and get your own HTML Page.</h3>
-		Enter the heading<br><br>
-		<textarea id="heading" rows="2"></textarea>
-		<br>
-		Enter the content of the Web Page<br><br>
-		<textarea id="content"></textarea>
-		<br><br>
-		Select Style<br><br>
-		<select id="style">
-			<option value="1">Solar</option>
-			<option value="2">Monokai</option>
-		</select>
-		<br><br>
-		<button onclick="showInput()">Stylize!</button>
+		<div class="card">
+			Enter the heading<br><br>
+			<textarea id="heading" rows="1"></textarea>
+			<br><br>
+			Enter the content of the Web Page<br><br>
+			<textarea id="content" rows="15"></textarea>
+			<br><br>
+			Select Style<br><br>
+			<select id="style">
+				<option value="1">Solar</option>
+				<option value="2">Monokai</option>
+			</select>
+			<br><br>
+			<button onclick="showInput()">Stylize!</button>
+		</div>
 	</div>
 
 	<div id="themeContent" style="display: none;">
