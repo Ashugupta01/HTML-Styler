@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Styler</title>
+	<link rel="stylesheet" type="text/css" href="main-style.css">
+	<link href="https://fonts.googleapis.com/css?family=Chela+One|Asap" rel="stylesheet">
+</head>
+<body>
+
+	<div id="getDetails">
+		<h1>Welcome to HTML Styler</h1>
+		<h3>Enter the heading and content and get your own HTML Page.</h3>
+		Enter the heading<br><br>
+		<textarea id="heading" rows="2"></textarea>
+		<br>
+		Enter the content of the Web Page<br><br>
+		<textarea id="content"></textarea>
+		<br><br>
+		Select Style<br><br>
+		<select id="style">
+			<option value="1">Solar</option>
+			<option value="2">Monokai</option>
+		</select>
+		<br><br>
+		<button onclick="showInput()">Stylize!</button>
+	</div>
+
+	<div id="themeContent" style="display: none;">
+		<div id="SolarTheme" style="display: none; background-color: #FFD264">
+			<h1 id="SolarHeading"></h1>
+			<p id="SolarContent"></p>
+		</div>
+		<div id="MonokaiTheme" style="display: none; background-color: #969285">
+			<h1 id="MonokaiHeading"></h1>
+			<p id="MonokaiContent"></p>
+		</div>
+		<button onclick="goBack()">Go back!</button>
+	</div>
+
+<script type="text/javascript">
+	
+	function showInput() {
+		document.getElementById("getDetails").style.display="none";
+		document.getElementById("themeContent").style.display="";
+		var getHeading = document.getElementById("heading").value;
+		var getContent = document.getElementById("content").value;
+		var getStyle = document.getElementById("style").value;
+
+		if (getStyle==1) {
+			document.getElementById("MonokaiTheme").style.display="none";
+			document.getElementById("SolarTheme").style.display="";
+			document.getElementById("SolarHeading").innerHTML = getHeading;
+			document.getElementById("SolarContent").innerHTML = getContent;
+		}
+		else if (getStyle==2) {
+			document.getElementById("SolarTheme").style.display="none";
+			document.getElementById("MonokaiTheme").style.display="";
+			document.getElementById("MonokaiHeading").innerHTML = getHeading;
+			document.getElementById("MonokaiContent").innerHTML = getContent;
+		}
+	}
+
+	function goBack()
+	{
+		document.getElementById("getDetails").style.display="";
+		document.getElementById("themeContent").style.display="none";
+	}
+</script>
+</body>
+</html>

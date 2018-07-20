@@ -1,0 +1,36 @@
+#SolarHeading {
+	text-align: center;
+	padding: 1.5em;
+	color: #ED6315;
+	background-color: #FFD264;
+	margin-top: 0.5em;
+	font-size: 2.5em;
+	font-family: 'Chela One', cursive;
+}
+
+#SolarContent {
+	text-align: center;
+	padding: 1.5em;
+	color: #ED6315;
+	background-color: #FFD264;
+	margin-top: 0.5em;
+	font-size: 1.3em;
+	font-family: 'Asap', sans-serif;
+}
+
+#MonokaiHeading {
+	text-align: center;
+	padding: 1.5em;
+	color: #FF0036;
+	margin-top: 0.5em;
+	font-size: 2.5em;
+	font-family: 'Chela One', cursive;
+}
+#MonokaiContent {
+	text-align: center;
+	padding: 1.5em;
+	color: #F8E017;
+	margin-top: 0.5em;
+	font-size: 1.3em;
+	font-family: 'Asap', sans-serif;
+}
